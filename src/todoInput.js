@@ -24,10 +24,14 @@ class TodoInput extends React.Component {
           </div>
           <button
             type="submit"
-            className="btn-block btn-primary mt-3 text-uppercase"
+            className={
+              editItem
+                ? "btn btn-block btn-success mt-3"
+                : "btn btn-block btn-primary mt-3 text-uppercase"
+            }
           >
             {" "}
-            Add item
+            {editItem ? "edit item" : "add item"}Add item
           </button>
         </form>
       </div>
