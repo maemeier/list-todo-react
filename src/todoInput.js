@@ -32,7 +32,7 @@ class TodoInput extends React.Component {
             }
           >
             {" "}
-            {editItem ? "edit item" : "add item"}Add item
+            {editItem ? "edit item" : "add item"}
           </button>
         </form>
       </div>
